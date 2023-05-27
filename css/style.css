@@ -1,0 +1,266 @@
+/*
+
+RESET
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+
+GENERAL
+
+*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.cards > .card{
+    width: calc((100% / 6) - 20px);
+    margin: 0 10px;
+}
+
+img{
+    width: 100%;
+}
+
+.circular-propic{
+    border-radius: 50%;
+}
+
+
+/*
+
+MAIN CONTENT
+
+*/
+
+#main-content{
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+#main-content > aside{
+    width: 200px;
+}
+
+#main-content > aside > .logo{
+    display: block;
+}
+
+#main-content > aside > .logo-small{
+    display: none;
+}
+
+
+#main-content > aside ul{
+    list-style: none;
+}
+
+#main-content > aside > .logo{
+    padding: 20px;
+}
+
+
+#main-content > main,
+#main-content > main > header{
+    width: calc(100% - 200px)
+}
+
+#main-content > main > header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+    padding: 20px;
+    width: calc(100% - 200px)
+    
+}
+
+#main-content > main > header > button{
+    background-color: transparent;
+    padding: 5px 15px;
+    border-radius: 40px;
+    border-color: white;
+}
+
+#main-content > main > header > button > a{
+    text-decoration: none;
+    color: white;
+}
+
+#main-content > main > section{
+    overflow-y: auto;
+    height: 100%;
+    padding-top: 80px;
+}
+
+#main-content > main > section nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#main-content > main > section nav ul li{
+    padding: 5px 10px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > *{
+    padding: 20px;
+}
+
+
+/***************************
+
+RESPONSIVE
+
+***************************/
+
+/*
+
+FOR TABLET
+
+*/
+
+@media screen and (max-width: 1100px){
+    /*
+
+    MAIN CONTENT
+
+    */
+
+    .cards > .card{
+        width: calc((100% / 4) - 20px);
+        margin: 0 10px;
+    }
+
+    /*
+
+    FOOTER
+
+    */
+}
+
+/*
+
+FOR NORMAL MOBILE
+
+*/
+
+@media screen and (max-width: 700px){
+    /*
+
+    MAIN CONTENT
+
+    */
+
+    .cards > .card{
+        width: calc((100% / 2) - 20px);
+        margin: 0 10px;
+    }
+
+    /*
+
+    FOOTER
+
+    */
+}
+
+/*
+
+FOR SMALL MOBILE
+
+*/
+
+@media screen and (max-width: 600px){
+    /*
+
+    MAIN CONTENT
+
+    */
+
+    #main-content > aside{
+        width: 80px;
+    }
+
+    #main-content > main,
+    #main-content > main > header{
+    width: calc(100% - 80px)
+    }
+
+    #main-content > aside > .logo{
+        display: none;
+    }
+    
+    #main-content > aside > .logo-small{
+        display: block;
+    }
+
+    /*
+
+    FOOTER
+
+    */
+}
+
+/*
+
+DEBUG
+
+*/
+
+.debug #main-content,
+.debug footer,
+.debug aside, 
+.debug main{
+    border: 2px dashed black;
+}
+
+.debug #main-content{
+    background-color: red;
+}
+
+.debug footer{
+    background-color: blue;
+}
+
+.debug #main-content > aside{
+    background-color: green;
+}
+
+.debug main{
+    background-color: yellow;
+}
+
+.debug > footer > div{
+    background-color: violet;
+}
