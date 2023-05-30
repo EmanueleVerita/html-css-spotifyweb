@@ -68,9 +68,18 @@ MAIN CONTENT
     display: none;
 }
 
+#main-content > aside > .vertical-bar{
+    display: flex;
+}
+
 
 #main-content > aside ul{
     list-style: none;
+}
+
+#main-content > aside ul li{
+   color: darkgray;
+   padding: 5px;
 }
 
 #main-content > aside > .logo{
@@ -136,6 +145,46 @@ footer{
 
 footer > *{
     padding: 20px;
+}
+
+footer > .left-footer{
+    display: flex;
+}
+
+.cover-song-playing > img{
+    width: 40px;
+    height: 40px;
+}
+
+.song-playing{
+    padding: 5px 5px;
+    color: white;
+}
+
+.song-playing-icons{
+    padding: 10px 5px;
+    
+}
+
+.song-playing-icons > .fa-regular{
+    margin-right: 3px;
+    color: white;
+}
+
+.icons-play-music > *{
+    margin: 5px ;
+    color: white;
+}
+
+.icons-play-music > .fa-sharp{
+    font-size: 2em;
+    margin: 5px 2px;
+}
+
+.right-footer > *{
+    color: white;
+    margin: 5px;
+    padding-top: 10px;
 }
 
 
@@ -223,6 +272,10 @@ FOR SMALL MOBILE
     
     #main-content > aside > .logo-small{
         display: block;
+    }
+
+    #main-content > aside > .vertical-bar > .text-icons{
+        display: none;
     }
 
     /*
